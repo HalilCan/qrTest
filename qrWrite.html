@@ -9,12 +9,18 @@
 
 <script type="text/javascript" src="jquery-qrcode-master/jquery.qrcode.min.js"></script>
 
+<div id = "input-div">
 <h2>Info in the QR Code</h2>
-<p>Name: Simon</p>
-<p>Surname: Pegg</p>
+    <form>
+        <label>First name:</label> <input type="text" name="firstname"><br>
+        <label>Last name:</label> <input type="text" name="lastname"><br>
+        <label>Email:</label> <input  type="text" name="email"><br>
+        <label>School:</label> <input type="text" name="school"><br>
+        <input id = "submit-btn" type="submit" name="submit">
+    </form>
+</div>
 
-<p>email: hotfuzz@gmail.com</p>
-<p>School: Some Thing High School</p><br>
+<br>
 
 <p>Render in table</p>
 <div class = "qr" id = "qrcodeTable"></div>

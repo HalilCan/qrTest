@@ -2,10 +2,35 @@ html {
     background-color: lightslategray;
     color: floralwhite;
     font-weight: 600;
+
 }
 
 .qr {
     display: inline-block;
     border: 5px solid steelblue;
     border-radius: 3px;
+}
+
+label {
+    padding-right: 5px;
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+}
+
+#submit-btn {
+    display: inline-block;
+    float: left;
+    clear: left;
+    margin-left: 196px;
+    text-align: right;
+}
+
+#input-div {
+    display: inline-block;
+    border-bottom: 2px solid darkslategrey;
+    border-radius: 5px;
+    padding: 2px 5px 20px 5px;
 }
