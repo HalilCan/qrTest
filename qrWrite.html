@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>basic example</title>
+    <title>QR test</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 
-<script type="text/javascript" src="js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+
+<p>Info in the QR Code</p>
+<p>Name: Simon</p>
+<p>Surname: Pegg</p>
+
+
+<p>email: hotfuzz@gmail.com</p>
+<p>School: Some Thing High School</p><br>
 
 
 <p>Render in table</p>
 <div id="qrcodeTable"></div>
 <p>Render in canvas</p>
 <div id="qrcodeCanvas"></div>
+
+<script src="js/index.js"></script>
+
 <script>
-    //jQuery('#qrcode').qrcode("this plugin is great");
-    jQuery('#qrcodeTable').qrcode({
-        render	: "table",
-        text	: "http://jetienne.com"
-    });
-    jQuery('#qrcodeCanvas').qrcode({
-        text	: "http://jetienne.com"
-    });
 </script>
 
 </body>
