@@ -1,0 +1,11 @@
+html {
+    background-color: lightslategray;
+    color: floralwhite;
+    font-weight: 600;
+}
+
+.qr {
+    display: inline-block;
+    border: 5px solid steelblue;
+    border-radius: 3px;
+}
