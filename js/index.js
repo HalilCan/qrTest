@@ -1,12 +1,31 @@
-
-let qrInfo = 'Simon,Pegg,hotfuzz@gmail.com,Some Thing High School';
+let firstNameBox = document.getElementById('fn');
+let firstName = '';
+let lastNameBox = document.getElementById('ln');
+let lastName = '';
+let emailBox = document.getElementById('em');
+let email = '';
+let schoolBox = document.getElementById('sc');
+let school = '';
 //jQuery('#qrcode').qrcode("this plugin is great");
 
-jQuery('#qrcodeTable').qrcode({
-  render	: "table",
-  text	: qrInfo
-});
+function getInput() {
+  firstName = firstNameBox.value;
+  lastName = lastNameBox.value;
+  email = emailBox.value;
+  school = schoolBox.value;
+  console.log(firstName);
+  let info = firstName + ',' + lastName + ',' + email + ',' + school;
+  generateQR(info);
+}
 
-jQuery('#qrcodeCanvas').qrcode({
-  text	: qrInfo
-});
+function generateQR(info) {
+  jQuery('#qrcodeTable').qrcode({
+    render	: "table",
+    text	: info
+  });
+  
+  jQuery('#qrcodeCanvas').qrcode({
+    text	: info
+  });
+}
+
