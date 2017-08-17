@@ -6,7 +6,6 @@ let emailBox = document.getElementById('em');
 let email = '';
 let schoolBox = document.getElementById('sc');
 let school = '';
-//jQuery('#qrcode').qrcode("this plugin is great");
 
 function getInput() {
   firstName = firstNameBox.value;
