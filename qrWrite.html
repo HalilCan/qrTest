@@ -5,9 +5,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-
-<script type="text/javascript" src="jquery-qrcode-master/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="src/jquery-3.2.1.js"></script>
+<script src="src/barcode.js/w69b.qrcode.min.js"></script>
+<script type="text/javascript" src="src/jquery-qrcode-master/jquery.qrcode.min.js"></script>
 
 <div id = "input-div">
 <h2>Info in the QR Code</h2>
@@ -22,10 +22,20 @@
 
 <br>
 
+<!--
 <p>Render in table</p>
 <div class = "qr" id = "qrcodeTable"></div>
+-->
 <p>Render in canvas</p>
 <div class = "qr" id = "qrcodeCanvas"></div>
+<br>
+<br>
+<form>
+    <input id = "decode-btn" type="button" name="decode" value = "Decode" onclick="decodeQr()">
+</form>
+<div id = 'result'>
+
+</div>
 
 <script src="js/index.js"></script>
 

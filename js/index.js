@@ -6,6 +6,9 @@ let emailBox = document.getElementById('em');
 let email = '';
 let schoolBox = document.getElementById('sc');
 let school = '';
+let resultBox = document.getElementById('result');
+
+w69b.qr.decoding.setWorkerUrl('src/barcode.js/w69b.qrcode.decodeworker.min.js');
 
 function getInput() {
   firstName = firstNameBox.value;
@@ -17,13 +20,33 @@ function getInput() {
   generateQR(info);
 }
 
+function decodeQr() {
+    let decodeOptions = {};
+    let decoder = new w69b.qr.decoding.Decoder(decodeOptions);
+    let imgCanvas = document.getElementById('qrcodeCanvas').children[0];
+    let image = new Image();
+    image.id = "qrimg";
+    image.src = imgCanvas.toDataURL();
+    image.addEventListener('load', function() {
+        decoder.decode(image).then(function(result) {
+            resultBox.innerHTML = result.text;
+        });
+    });
+
+}
+
 function generateQR(info) {
-  jQuery('#qrcodeTable').qrcode({
+  /*jQuery('#qrcodeTable').qrcode({
+    width: 300,
+    height: 300,
     render	: "table",
     text	: info
   });
+  */
   
   jQuery('#qrcodeCanvas').qrcode({
+    width: 300,
+    height: 300,
     text	: info
   });
 }
