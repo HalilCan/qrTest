@@ -8,8 +8,6 @@ let schoolBox = document.getElementById('sc');
 let school = '';
 let resultBox = document.getElementById('result');
 
-w69b.qr.decoding.setWorkerUrl('src/barcode.js/w69b.qrcode.decodeworker.min.js');
-
 function getInput() {
   firstName = firstNameBox.value;
   lastName = lastNameBox.value;
@@ -20,7 +18,13 @@ function getInput() {
   generateQR(info);
 }
 
+/*
+function setDecoding() {
+    w69b.qr.decoding.setWorkerUrl('src/barcode.js/w69b.qrcode.decodeworker.min.js');
+}
+
 function decodeQr() {
+    setDecoding();
     let decodeOptions = {};
     let decoder = new w69b.qr.decoding.Decoder(decodeOptions);
     let imgCanvas = document.getElementById('qrcodeCanvas').children[0];
@@ -33,7 +37,7 @@ function decodeQr() {
         });
     });
 
-}
+} */
 
 function generateQR(info) {
   /*jQuery('#qrcodeTable').qrcode({
