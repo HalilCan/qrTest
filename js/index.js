@@ -6,7 +6,6 @@ let emailBox = document.getElementById('em');
 let email = '';
 let schoolBox = document.getElementById('sc');
 let school = '';
-let resultBox = document.getElementById('result');
 
 function getInput() {
   firstName = firstNameBox.value;
