@@ -1,0 +1,119 @@
+#pageview {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.row {
+    display: block;
+    border-bottom: 2px solid darkgray;
+}
+
+#header {
+    display: flex;
+}
+
+#logo {
+    font-size: 28px;
+    line-height: 45px;
+
+    flex: initial;
+    flex: 2;
+}
+
+#search-bar {
+    line-height: 50px;
+    padding-left: 20px;
+
+    flex: 6;
+}
+
+#profile-button {
+    line-height: 50px;
+
+    text-align: center;
+    flex: 1;
+}
+
+.header-section {
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid darkgray;
+}
+
+#profile-banner {
+    display: flex;
+    padding: 0 10% 0 10%;
+
+    min-width:300px;
+    height: 300px;
+    margin: auto;
+}
+
+#user-name {
+    padding-top: 20px;
+    font-size: 64px;
+    flex: 2;
+}
+
+#user-school{
+    margin-top: -140px;
+    flex: 1;
+}
+
+#edit-profile-button {
+    margin-top: -90px;
+    flex: 1;
+    color: cornflowerblue;
+}
+
+#qr-code {
+    flex: 1;
+
+    padding: 20px 40px 20px 40px;
+    width: 250px;
+}
+
+.banner-section {
+}
+
+#no-hackathon-image {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.event-section {
+    background-color: #edf4fa;
+    height: 400px;
+    text-align: center;
+}
+
+#no-hackathon-found {
+
+}
+
+#find-hackathon-button {
+    margin-top: 10px;
+    font-weight: 600;
+    color:white;
+    background-color: cornflowerblue;
+    font-size: 20px;
+
+
+}
+
+#user-info-section {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+#footer {
+    flex: auto;
+    background: black;
+    width:100%;
+    height:60px;
+}

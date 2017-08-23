@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xyz - John</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <script type="text/javascript" src="src/jquery-3.2.1.js"></script>
+    <script src="src/barcode.js/w69b.qrcode.min.js"></script>
+    <script type="text/javascript" src="src/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+</head>
+<body>
+<div id = 'pageview' class = 'container'>
+    <div id = 'header' class = 'row'>
+        <span id = 'logo' class = 'header-section'>Inventorspace</span>
+        <span id = 'search-bar' class = 'header-section'>Search the interspace!</span>
+        <span id = 'profile-button' class = 'header-section'>John</span>
+    </div>
+    <div id = 'profile-banner' class = 'row'>
+        <span id = 'qr-code' class = 'banner-section'>
+            <div class = "qr" id = "qrcodeCanvas"></div>
+        </span>
+        <span id = 'user-info-section' class = 'banner-section'>
+           <span id = 'user-name'>
+                John Doe
+            </span>
+            <span id = 'user-school'>
+                University of Generic
+            </span>
+            <span id = 'edit-profile-button' class = ' link-button'>
+                EDIT PROFILE
+            </span>
+        </span>
+    </div>
+    <div id = 'hackathon-space' class = 'row'></div>
+        <div id = 'no-hackathon-found' class = 'event-section'>
+            <img id = 'no-hackathon-image' src="https://cdn.evbstatic.com/s3-build/perm_001/fd7664/django/images/pages/mytickets/no-dates@2x.png">
+            You have no upcoming hackathons.
+            <div id = 'find-hackathon'>
+                <button id = 'find-hackathon-button'>FIND A HACKATHON</button>
+            </div>
+        </div>
+    <div id = 'footer' class = 'row'>
+
+    </div>
+</div>
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>
