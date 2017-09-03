@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xyz - John</title>
+    <link rel="stylesheet" href="css/profile_student.css">
+    <script type="text/javascript" src="src/jquery-3.2.1.js"></script>
+    <script src="src/barcode.js/w69b.qrcode.min.js"></script>
+    <script type="text/javascript" src="src/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+</head>
+
+<body>
+<div id = 'pageview' class = 'container'>
+    <div id    = 'left-gap' class = 'gap'></div>
+
+    <div id = 'left-display' class = 'display container'>
+        <div id = 'profile-banner' class = 'row container'>
+            <span id = 'qr-code' class = 'banner-section'>
+                <div class = "qr" id = "qrcodeCanvas"></div>
+            </span>
+            <span id = 'user-info-section' class = 'banner-section container'>
+               <span id = 'user-name' class = 'user-info'>
+                    John Doe
+               </span>
+               <span id = 'user-school' class = 'user-info'>
+                   University of Generic
+               </span>
+               <span id = 'edit-profile-button' class = 'user-info link-button'>
+                   EDIT PROFILE
+               </span>
+            </span>
+        </div>
+        <div id = 'update-section' class = 'row container'>
+            <div id = 'update-header'>
+                Updates
+            </div>
+            <div id = 'update-line'>
+
+            </div>
+            <div id = 'update-list-container' class = 'row container'>
+                <div id = 'update-1' class = 'update-box example-update new-updates'>
+                    <div id = 'update-1-text' class = 'update-text'>
+                        Lorem ipsum I don't remember the rest. New stuff has the green line la la la
+                    </div>
+                    <div id = 'update-1-date' class = 'update-date'>
+                        Date and Time
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id = 'inventathon-space' class = 'display container'>
+        Register for inventathon
+    </div>
+
+    <div id = 'right-gap' class = 'gap'></div>
+</div>
+
+<script src="js/profile_student.js"></script>
+
+</body>
+</html>
