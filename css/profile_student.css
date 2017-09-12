@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     background-color: #eaeaea;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #left-gap {
@@ -156,6 +156,7 @@
     position: relative;
     height: 110px;
     object-fit: cover;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left 80%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
 .inventathon-choice-title {
@@ -299,10 +300,10 @@
     width: 100px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     #pageview {
         flex-direction: column;
-        margin-left: 10px;
-        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
