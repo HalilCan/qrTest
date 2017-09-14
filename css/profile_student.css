@@ -300,10 +300,65 @@
     width: 100px;
 }
 
+#registered-notification {
+    display: none;
+    position: relative;
+    color: white;
+    margin-top: 20px;
+    height: 0;
+    background-color: forestgreen;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 20px;
+    min-width: 340px;
+    max-width: 340px;
+}
+
+.notification-transform {
+    transition: all 1s ease;
+}
+
+.notification-active {
+    display: inline-block;
+    height:150px;
+}
+
+#notification-header {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+
+#notification-name {
+    font-size: 22px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#notification-address-1 {
+    margin-left: 5px;
+}
+
+#notification-address-2 {
+    margin-left: 5px;
+}
+
+#check-mark {
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+
 @media (max-width: 700px) {
     #pageview {
         flex-direction: column;
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .inventathon-choice-image {
+        width: 150px;
     }
 }

@@ -14,4 +14,10 @@ function generatePreDefinedQR() {
     });
 }
 
+$(document).ready(function(){
+    $("#register-button").click(function(){
+        $("#registered-notification").toggleClass("notification-active");
+    });
+});
+
 window.onload = generatePreDefinedQR();
