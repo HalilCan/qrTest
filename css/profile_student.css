@@ -301,11 +301,9 @@
 }
 
 #registered-notification {
-    display: none;
     position: relative;
     color: white;
     margin-top: 20px;
-    height: 0;
     background-color: forestgreen;
     border-radius: 4px;
     padding: 5px;
@@ -315,6 +313,7 @@
 }
 
 .notification-transform {
+    display: none;
     transition: all 1s ease;
 }
 

@@ -16,6 +16,7 @@ function generatePreDefinedQR() {
 
 $(document).ready(function(){
     $("#register-button").click(function(){
+        //$("#registered-notification").css({"display": "inline-block"});
         $("#registered-notification").toggleClass("notification-active");
     });
 });
